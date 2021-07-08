@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>주말농장 중개플랫폼 따닽-메인페이지</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--
+
+TemplateMo 546 Sixteen Clothing
+
+https://templatemo.com/tm-546-sixteen-clothing
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>주말농장 <em>따닽</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">따닽
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">농작물 마켓</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">내 농장</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>따닽</h4>
+            <h2>주말농장 중개플랫폼</h2>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>따닽</h4>
+            <h2>아이들과 함께하는 주말농장</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>따닽</h4>
+            <h2>도심 속 힐링을 찾아서</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="section-heading">
+              <button class="btn btn-light" id="register">주말농장 등록하기</button>
+              <div class="col-lg">
+                <!-- 결과 알림 -->
+                <p>농장이름</p><input type="text" id="register-fid" name="fid" value="FARM22"> <br>
+                <p>사업자등록번호</p><input type="text" id="register-bid" name="bid" value="01-2222222"> <br>
+                <p>지번</p><input type="text" id="register-address" name="address" value="222-222"> <br>
+                <p>임대료</p><input type="text" id="register-price" name="price" value="800,000"> <br>
+                <!-- 버튼 영역-->
+                <button class="btn btn-primary" id="register-btn">등록하기</button>
+                <br> <div id="register-alert"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-heading">
+              <button class="btn btn-light" id="query">내 작물 조회하기</button>
+              <div class="col-lg">
+                <!-- 버튼 영역-->
+                <p>일지번호</p><input type="text" id="query-cid" name="cid" value=""> <br>
+                <button class="btn btn-primary" id="query-btn">조회하기</button>
+                <br> <div id="query-alert"></div>
+                <!-- 테이블 안에 row를 하나씩 붙이는 곳 -->
+                <table class="table">
+                  <tbody id="table">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-heading">
+              <button class="btn btn-light" id="contract">주말농장 참여하기</button>
+              <div class="col-lg">
+                <!-- 결과 알림 -->
+                <p>일지번호</p><input type="text" id="new-cid" name="cid" value="CID-2222"> <br>
+                <p>농장이름</p><input type="text" id="new-fid" name="fid" value="FARM22"> <br>
+                <p>아이디</p><input type="text" id="new-uid" name="uid" value="User22"> <br>
+                <p>희망작물</p><input type="text" id="new-pname" name="pname" value="LETTUCE"> <br>
+                <!-- 버튼 영역-->
+                <button class="btn btn-primary" id="new-btn">신청하기</button>
+                <br> <div id="new-alert"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-heading">
+              <button class="btn btn-light" id="update">상태 변경하기</button>
+              <div class="col-lg">
+                <!-- 버튼 영역-->
+                <p>일지번호</p><input type="text" id="update-cid" name="cid" value=""> <br>
+                <button class="btn btn-primary" id="update-btn">변경하기</button>
+                <br> <div id="update-alert"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+  <script>//농장 등록
+    $("#register-btn").click(()=>{
+        const fid = $("#register-fid").val();
+        const bid = $("#register-bid").val();
+        const addr = $("#register-address").val();
+        const price = $("#register-price").val();
+        const url = "/registerFarm"
+
+        $.post(url, {fid: fid, bid: bid, address: addr, rentPrice: price }, (data, status)=>{  
+            if(status == "success"){
+                $('#register-alert').append("<div id='success' class='alert alert-success'>등록완료</div>");
+                $('#register-alert').fadeIn(500);
+                $('#register-alert').fadeOut(5000);
+            }
+        })
+    })
+    </script>
+    <script> //주말농장 신청하는 스크립트
+      $("#new-btn").click(()=>{
+          const cid = $("#new-cid").val();
+          const uid = $("#new-uid").val();
+          const fid = $("#new-fid").val();
+          const pname = $("#new-pname").val();
+          const url = "/newRecord"
+          
+          $.post(url, {cid: cid, uid: uid, fid: fid, pname: pname }, (data, status)=>{         
+              if(status == "success"){
+                  $('#new-alert').append("<div id='success' class='alert alert-success'>계약완료</div>");
+                  $('#new-alert').fadeIn(500);
+                  $('#new-alert').fadeOut(5000);
+              }
+          })
+      })
+    </script>
+    <script>//농장 조회
+      $("#query-btn").click(()=>{
+        const cid = $("#query-cid").val();
+        const url = "/getRecord"
+        $.get(url, {cid: cid}, (data)=>{
+            // 조회했을 때 값이 null이 아니면 (일치하는 값이 존재한다면)
+          if(status != null){
+              $('#query-alert').append("<div id='success' class='alert alert-success'>조회성공</div>");
+              $('#query-alert').fadeOut(2000);
+
+              const parsedData= JSON.parse(data);
+              $('#table').empty();  
+              $('#table').append("<tr><th scope='row'>일지번호</th><td>" + parsedData.cid + "</td></tr>")
+              $('#table').append("<tr><th scope='row'>아이디</th><td>" + parsedData.uid + "</td></tr>")
+              $('#table').append("<tr><th scope='row'>농장이름</th><td>" + parsedData.fid + "</td></tr>")
+              $('#table').append("<tr><th scope='row'>작물이름</th><td>" + parsedData.plantName + "</td></tr>")
+              $('#table').append("<tr><th scope='row'>성장상태</th><td>" + parsedData.plantState + "</td></tr>")
+          }        
+        })
+      })
+    </script>
+    <script> //상태 변경
+      $("#update-btn").click(()=>{
+          const cid = $("#update-cid").val();
+          const url = "/updateRecord"
+          
+          $.post(url, {cid: cid}, (data, status)=>{         
+              if(status == "success"){
+                  $('#new-alert').append("<div id='success' class='alert alert-success'>변경완료</div>");
+                  $('#new-alert').fadeIn(500);
+                  $('#new-alert').fadeOut(5000);
+              }
+          })
+      })
+    </script>
+  </body>
+</html>
